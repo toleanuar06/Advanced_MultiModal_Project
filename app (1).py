@@ -87,7 +87,7 @@ else:
                 fertility = prediction[0][0]
             
             st.success(f"Болжалды құнарлылық коэффициенті: {fertility:.3f}")
-            st.progress(fertility)
+            st.progress(float(fertility))
             
             if fertility > 0.8:
                 st.markdown("### Бағалау: 🟢 Өте құнарлы жер.")
